@@ -60,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
         Firebase.setAndroidContext(this);
 
+        Intent intent=getIntent();
+        String name=intent.getStringExtra("name");
+
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 //        ImageView iv = (ImageView) findViewById(R.id.dotview);
