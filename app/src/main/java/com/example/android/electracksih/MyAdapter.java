@@ -169,15 +169,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                         urlString = urlString + "/" + mid + "?arg1=1&arg2=114&arg3=" + stat;
                     }
                     case 2: {
-                        urlString = urlString + "/" + mid + "?arg1=1&arg2=113&arg3=" + stat;
+                        urlString = urlString + "/" + mid + "?arg1=1&arg2=115&arg3=" + stat;
 
                     }
                     case 3: {
-                        urlString = urlString + "/" + mid + "?arg1=1&arg2=112&arg3=" + stat;
+                        urlString = urlString + "/" + mid + "?arg1=1&arg2=113&arg3=" + stat;
 
                     }
                     case 4: {
-                        urlString = urlString + "/" + mid + "?arg1=1&arg2=115&arg3=" + stat;
+                        urlString = urlString + "/" + mid + "?arg1=1&arg2=112&arg3=" + stat;
 
                     }
 

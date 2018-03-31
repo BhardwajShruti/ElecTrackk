@@ -22,6 +22,7 @@ public class Device_Detail extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
+
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Bundle bundle=new Bundle();
@@ -73,7 +74,18 @@ return true;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_device__detail);
+        Bundle bundle=new Bundle();
+        bundle.putInt("id",device_id);
+        dvFrame= new Device_Fragment();
+        dvFrame.setArguments(bundle);
+        FragmentManager fm= getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+//ft.detach(tvframe);
 
+        ft.replace(R.id.container, dvFrame);
+        ft.commit();
+        Log.i("a","b");
+      //  return true;
         Intent intent=getIntent();
         device_id=intent.getIntExtra("id",0);
         mTextMessage = (TextView) findViewById(R.id.message);

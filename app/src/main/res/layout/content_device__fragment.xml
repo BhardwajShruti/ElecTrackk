@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/main_gradient"
     tools:context="com.example.android.electracksih.Device_Fragment">
     <ScrollView
@@ -24,6 +25,34 @@
          android:textColor="@android:color/white"
          android:textSize="20dp"
          android:textStyle="bold" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_margin="10dp"
+         android:orientation="horizontal">
+         <ImageButton
+             android:id="@+id/date_selector"
+             android:layout_width="0dp"
+             android:layout_height="45dp"
+             android:foregroundGravity="right"
+             android:layout_marginLeft="10dp"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="2"
+             android:background="@android:color/holo_green_dark"
+             android:elevation="9dp"
+             android:scaleType="fitXY"
+             app:srcCompat="@android:drawable/ic_menu_today"/>
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="10"
+             android:padding="5dp"
+             android:id="@+id/dateText"
+             android:textSize="18sp"
+             android:gravity="center"
+             android:hint="Schedule Alarm"
+             android:layout_height="match_parent" />
+     </LinearLayout>
 
      <ImageView
          android:layout_width="match_parent"
